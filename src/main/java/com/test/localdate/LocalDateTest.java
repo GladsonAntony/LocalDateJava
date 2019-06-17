@@ -1,13 +1,15 @@
 package com.test.localdate;
 
+import org.testng.annotations.Test;
+
 import java.time.*;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 
 public class LocalDateTest {
-    public static void main(String[] args) {
 
+    @Test
+    public void Test1() {
         //getLocalDateDemo1();
         DayOfWeek dayOfWeek = LocalDate.parse("2019-03-01").getDayOfWeek();
         System.out.println(dayOfWeek);
@@ -36,7 +38,8 @@ public class LocalDateTest {
         System.out.println(with);
     }
 
-        private static void getLocalDateDemo1(){
+    @Test
+    public void Test2() {
         LocalDate localDate1 = LocalDate.now();
         System.out.println(localDate1);
 
@@ -52,7 +55,7 @@ public class LocalDateTest {
         LocalDate localDate4 = LocalDate.of(2019, 03, 02);
         System.out.println(localDate4);
 
-        LocalDate localDate5= LocalDate.parse("2019-03-05");
+        LocalDate localDate5 = LocalDate.parse("2019-03-05");
 
         System.out.println(localDate5);
 
