@@ -9,8 +9,5 @@
         <module name="LocalDateJava" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="LocalDateJava" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
